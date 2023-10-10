@@ -157,4 +157,20 @@ upperFirst("Sono andato al Mare");
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
+
 /* SCRIVI QUI LA TUA RISPOSTA */
+const giveMeRandom = function () {
+
+    const numberRandomFloor = Math.floor(Math.random()*11)
+return numberRandomFloor;
+}
+
+console.log(giveMeRandom());
+
+const emptyArray = []
+
+for (let i = 0; i<10; i++) {
+   
+    emptyArray.push(giveMeRandom())
+}
+console.log(emptyArray)
