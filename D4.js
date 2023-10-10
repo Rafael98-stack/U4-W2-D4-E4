@@ -167,10 +167,16 @@ return numberRandomFloor;
 
 console.log(giveMeRandom());
 
+const generateArray = function(n) {
+
+
+
 const emptyArray = []
 
-for (let i = 0; i<10; i++) {
+for (let i = 0; i<n; i++) {
    
     emptyArray.push(giveMeRandom())
 }
-console.log(emptyArray)
+return emptyArray;
+}
+console.log(generateArray(100))
